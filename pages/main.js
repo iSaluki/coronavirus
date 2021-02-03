@@ -6,7 +6,7 @@ $(function () {
         success: function(stats){
         $.each(stats, function(i, stat)
         {
-            $stats.append("<li>Country: "+ stat.country +", Cases: "+ stat.cases +" , Deaths: "+ stat.deaths +"</li>");
+            $stats.append("<li>Country: "+ stat.country +", Cases: "+ stat.cases +" , Deaths: "+ stat.deaths + ", Updated at: "+ stat.last_update +", Recovered:" + stat.recovered + "</li>");
         })
         }
     });
