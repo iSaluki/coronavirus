@@ -14,14 +14,24 @@
                 <h1>COVID-19 Tracker</h1>
             </span>
             <div class="alert alert-success" role="alert">
-                <h4 class="alert-heading">Disclaimer</h4>
+                <span class="badge bg-success">Information</span>
                 <p>All of the data on this site originates from government sources. However, in some cases governments will not
                     publish or update all information, meaning that data here may be old or inaccurate. For example, some governments do not publish information on recoveries, so 0 will be shown.
                 <p>
                     <hr>
                 <p class="mb-0">If you notice any major issues, please let us know.</p>
             </div>
-    
+
+            <div style="height: 50px;">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Select Data</option>
+                <option value="1">Current</option>
+                <option value="2">Predicted</option>
+              </select>
+            </div>
+            <p class="fs-6">Predicted data uses machine learning estimates.</p>
+
+
             <table id="stats" class="table table-bordered">
                 <tr>
                     <th scope="col">Country</th>
@@ -31,6 +41,7 @@
                     <th scope="col">Last Update</th>
                 </tr>
             </table>
+            <p class="fw-light text-center">A Saluki Corporation project. This website is supported by ads.</p>
         </main>
 
         <script async>
